@@ -1,0 +1,7 @@
+﻿@model IEnumerable<CraftMake.Models.User>;
+
+@foreach(var user in Model) {
+    <p>@user.email</p>
+    <p>@user.password</p>
+    <br /><br />
+}

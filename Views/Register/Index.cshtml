@@ -1,0 +1,11 @@
+﻿@model CraftMake.Models.User;
+
+<div style="margin:auto; width:max-content; border: 3px solid black; padding: 10px">
+    <form asp-controller="Register" asp-action="AddNewUser" method="post">
+        <label asp-for="email">Enter Email Address: </label><br />
+        <input type="text" asp-for="email" /><br />
+        <label asp-for="password">Enter Password: </label><br />
+        <input type="password" asp-for="password" /><br /><br />
+        <input type="submit" />
+    </form>
+</div>
