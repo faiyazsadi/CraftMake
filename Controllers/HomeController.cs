@@ -1,4 +1,5 @@
-﻿using CraftMake.Models;
+﻿using CraftMake.Context;
+using CraftMake.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
@@ -6,23 +7,28 @@ namespace CraftMake.Controllers
 {
     public class HomeController : Controller
     {
+        private readonly CraftMakeDatabaseContext _context;
+
         private readonly ILogger<HomeController> _logger;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(CraftMakeDatabaseContext context, ILogger<HomeController> logger)
         {
+            _context = context;
             _logger = logger;
         }
 
         [HttpGet]
         public IActionResult Index()
         {
-            return View();
-        }
+            List<Product> products = new List<Product>();
+            products = _context.Product.ToList();
 
-        [HttpGet]
-        public IActionResult Details()
+            return View(products);
+        }
+        
+        public IActionResult Details(int id)
         {
-            return View();
+            return View(_context.Product.FirstOrDefault(x => x.Id == id));
         }
 
         [HttpPost]

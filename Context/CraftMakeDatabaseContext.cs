@@ -10,5 +10,6 @@ namespace CraftMake.Context
 
         }
         public DbSet<User> User { get; set; }
+        public DbSet<Product> Product { get; set; }
     }
 }

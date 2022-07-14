@@ -1,0 +1,13 @@
+﻿@model CraftMake.Models.Product;
+
+<div class="single-products-catagory clearfix">
+    <a>
+    <img src="@Url.Content(Model.ImagePath)" alt="" style="height:max-content; width:max-content">
+        <!-- Hover Content -->
+        <div class="hover-content">
+            <div class="line"></div>
+            <p>From $@Model.ProductPrice</p>
+            <h4>@Model.ProductName</h4>
+        </div>
+    </a>
+</div>
