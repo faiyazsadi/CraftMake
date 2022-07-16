@@ -10,6 +10,7 @@ namespace CraftMake.Controllers
         private readonly CraftMakeDatabaseContext _context;
 
         private readonly ILogger<HomeController> _logger;
+        public static List<Product> cart_items = new List<Product>();
 
         public HomeController(CraftMakeDatabaseContext context, ILogger<HomeController> logger)
         {
@@ -45,6 +46,19 @@ namespace CraftMake.Controllers
         }
 
         public IActionResult Privacy()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Cart(Product model)
+        {
+            int id = model.Id;
+            cart_items.Add(_context.Product.FirstOrDefault(x => x.Id == id));
+            return View(cart_items);
+        }
+
+        public IActionResult Checkout()
         {
             return View();
         }

@@ -23,56 +23,56 @@ namespace CraftMake.Models
                         ProductName = "Modern Chair",
                         ProductPrice = 180,
                         ProductDescription = "This is a custom made chair",
-                        ImagePath = "~/img/bg-img/1.jpg"
+                        ImagePath = "/img/bg-img/1.jpg"
                     },
                     new Product
                     {
                         ProductName = "Minimalistic Plant Pot",
                         ProductPrice = 100,
                         ProductDescription = "Stone Plant Pot",
-                        ImagePath = "~/img/bg-img/2.jpg"
+                        ImagePath = "/img/bg-img/2.jpg"
                     },
                     new Product
                     {
                         ProductName = "Plant Pot",
                         ProductPrice = 100,
                         ProductDescription = "Stone Plant Pot",
-                        ImagePath = "~/img/bg-img/5.jpg"
+                        ImagePath = "/img/bg-img/5.jpg"
                     },
                     new Product
                     {
                         ProductName = "Small Table",
                         ProductPrice = 100,
                         ProductDescription = "Stone Plant Pot",
-                        ImagePath = "~/img/bg-img/6.jpg"
+                        ImagePath = "/img/bg-img/6.jpg"
                     },
                     new Product
                     {
                         ProductName = "Night Stand",
                         ProductPrice = 100,
                         ProductDescription = "Stone Plant Pot",
-                        ImagePath = "~/img/bg-img/4.jpg"
+                        ImagePath = "/img/bg-img/4.jpg"
                     },
                     new Product
                     {
                         ProductName = "Modern Rocking Chair",
                         ProductPrice = 100,
                         ProductDescription = "Stone Plant Pot",
-                        ImagePath = "~/img/bg-img/8.jpg"
+                        ImagePath = "/img/bg-img/8.jpg"
                     },
                     new Product
                     {
                         ProductName = "Modern Rocking Chair",
                         ProductPrice = 100,
                         ProductDescription = "Stone Plant Pot",
-                        ImagePath = "~/img/bg-img/3.jpg"
+                        ImagePath = "/img/bg-img/3.jpg"
                     },
                     new Product
                     {
                         ProductName = "Modern Rocking Chair",
                         ProductPrice = 100,
                         ProductDescription = "Stone Plant Pot",
-                        ImagePath = "~/img/bg-img/9.jpg"
+                        ImagePath = "/img/bg-img/9.jpg"
                     }
                 );
                 context.SaveChanges();
