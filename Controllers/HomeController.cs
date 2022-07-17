@@ -50,6 +50,11 @@ namespace CraftMake.Controllers
             return View();
         }
 
+        public IActionResult Cart()
+        {
+            return View(cart_items);
+        }
+
         [HttpPost]
         public IActionResult Cart(Product model)
         {
