@@ -1,4 +1,6 @@
-﻿<div class="cart-table-area section-padding-0">
+﻿@model CraftMake.Models.Product;
+
+<div class="cart-table-area section-padding-0">
     <div class="container-fluid">
         <div class="row">
             <div class="col-12 col-lg-8">
@@ -8,57 +10,30 @@
                         <h2>Checkout</h2>
                     </div>
 
-                    <form action="#" method="post">
+                    <form enctype="multipart/form-data" asp-controller="Product" asp-action="AddProduct" method="post">
                         <div class="row">
                             <div class="col-12 mb-3">
-                                <input type="email" class="form-control" id="email" placeholder="Email" value="">
+                                <input asp-for="userEmail" type="email" class="form-control" id="email" placeholder="Email" value="">
                             </div>
                             <div class="col-12 mb-3">
-                                <input type="text" class="form-control" id="product_name" value="" placeholder="Product Name" required>
+                                <input asp-for="ProductName" type="text" class="form-control" id="product_name" value="" placeholder="Product Name" required>
                             </div>
                             <div class="col-12 mb-3">
-                                <input type="number" class="form-control" id="product_price" value="" placeholder="Product Price" required>
-                            </div>
-                            
-                            @*<div class="col-12 mb-3">
-                                <input type="text" class="form-control" id="company" placeholder="Company Name" value="">
-                            </div>*@
-                            
-                            @*<div class="col-12 mb-3">
-                                <select class="w-100" id="country">
-                                <option value="usa">United States</option>
-                                <option value="uk">United Kingdom</option>
-                                <option value="ger">Germany</option>
-                                <option value="fra">France</option>
-                                <option value="ind">India</option>
-                                <option value="aus">Australia</option>
-                                <option value="bra">Brazil</option>
-                                <option value="cana">Canada</option>
-                            </select>
-                            </div>*@
-                            @*<div class="col-12 mb-3">
-                                <input type="text" class="form-control mb-3" id="street_address" placeholder="Address" value="">
-                            </div>*@
-                            @*<div class="col-12 mb-3">
-                                <input type="text" class="form-control" id="city" placeholder="Town" value="">
-                            </div>*@
-                            @*<div class="col-md-6 mb-3">
-                                <input type="text" class="form-control" id="zipCode" placeholder="Zip Code" value="">
-                            </div>*@
-                            @*<div class="col-md-6 mb-3">
-                                <input type="number" class="form-control" id="phone_number" min="0" placeholder="Phone No" value="">
-                            </div>*@
-                            <div class="col-12 mb-3">
-                                <textarea name="comment" class="form-control w-100" id="comment" cols="30" rows="10" placeholder="Description about your product"></textarea>
+                                <input asp-for="ProductPrice" type="number" class="form-control" id="product_price" value="" placeholder="Product Price" required>
                             </div>
                             <div class="col-12 mb-3">
-                                <input class="form-control w-100" type="file" id="customFile" placeholder="Choose File" required>
+                                <textarea type="text" asp-for="ProductDescription" class="form-control h-w-400" id="description" placeholder="Description about your product"></textarea>
+                            </div>
+                            <div class="col-12 mb-3">
+                                <input asp-for="CoverPhoto" class="form-control w-100" id="customFile" placeholder="Choose File" required style="padding-left:0;">
                             </div>
                         </div>
+                        @*<input type="submit" value="Submit"/>*@
+                        <div class="amado-btn-group mt-30 mb-100">
+                            <input type="submit" value="Add Product" class="btn amado-btn mb-15">
+                        </div>
                     </form>
-                    <div class="amado-btn-group mt-30 mb-100">
-                    <a href="#" class="btn amado-btn mb-15">Add Product</a>
-                    </div>
+                    
                 </div>
             </div>
             @*<div class="col-12 col-lg-4">
