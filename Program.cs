@@ -6,7 +6,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-
+builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 // Add Session
 builder.Services.AddDistributedMemoryCache();
 
@@ -15,6 +15,7 @@ builder.Services.AddDbContext<CraftMakeDatabaseContext>(options =>
     options.UseSqlServer(connectionString: builder.Configuration.GetConnectionString("CraftMakeDatabase"));
 });
 
+// Session Idele Timeout
 builder.Services.AddSession(options =>
 {
     options.IdleTimeout = TimeSpan.FromSeconds(10);

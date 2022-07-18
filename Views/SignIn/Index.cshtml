@@ -1,6 +1,6 @@
 ﻿@model CraftMake.Models.User;
 
-<div style="margin:auto; width:max-content; border: 3px solid black; padding: 10px">
+@*<div style="margin:auto; width:max-content; border: 3px solid black; padding: 10px">
     <form asp-controller="SignIn" asp-action="CheckUserLogin" method="post">
         <label asp-for="email">Enter Email Address: </label><br />
         <input type="text" asp-for="email" /><br />
@@ -8,4 +8,41 @@
         <input type="password" asp-for="password" /><br /><br />
         <input type="submit" />
     </form>
+</div>*@
+
+<div class="cart-table-area section-padding-0">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 col-lg-8">
+                <div class="checkout_details_area mt-50 clearfix">
+
+                    <div class="cart-title">
+                        <h2>Sign In</h2>
+                    </div>
+
+                    <form asp-controller="SignIn" asp-action="CheckUserLogin" method="post">
+                        <div class="row">
+                            <div class="col-12 mb-3">
+                                <input asp-for="email" type="email" class="form-control" id="email" placeholder="Email" value="">
+                                @Html.ValidationMessageFor(model => model.email, "", new { @class = "text-danger" })
+                            </div>
+                            <div class="col-12 mb-3">
+                                <input asp-for="password" type="password" class="form-control" id="password" placeholder="Password" value="">
+                                @Html.ValidationMessageFor(model => model.password, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                        <div class="amado-btn-group mt-20">
+                            <input type="submit" class="btn amado-btn mb-15" value="Sign In">
+                        </div>
+                        @if(ViewBag.userEmailExists == 0)
+                        {
+                            <div class="alert alert-danger" role="alert">
+                                User Doesn't Exist! <a class="card-link" asp-controller="Register" asp-action="Index"><u style="font-weight:bold; color: #1e6cfc; font-size:16px;">Register Now!</u></a>
+                            </div>
+                        }
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>  
 </div>

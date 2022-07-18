@@ -10,6 +10,7 @@ namespace CraftMake.Controllers
         private readonly CraftMakeDatabaseContext _context;
 
         private readonly ILogger<HomeController> _logger;
+        public static List<Product> products = new List<Product>();
         public static List<Product> cart_items = new List<Product>();
 
         public HomeController(CraftMakeDatabaseContext context, ILogger<HomeController> logger)
@@ -21,8 +22,7 @@ namespace CraftMake.Controllers
         [HttpGet]
         public IActionResult Index()
         {
-            HttpContext.Session.SetString("key", "value");
-            List<Product> products = new List<Product>();
+            
             products = _context.Product.ToList();
 
             return View(products);

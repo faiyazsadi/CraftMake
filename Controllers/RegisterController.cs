@@ -16,25 +16,33 @@ namespace CraftMake.Controllers
             return View();
         }
 
+        [HttpPost]
         public ViewResult AddNewUser(User user)
         {
-            if (!ModelState.IsValid)
+            if (ModelState.IsValid)
             {
-                return View("Error");
+                var newUser = new User()
+                {
+                    firstName = user.firstName,
+                    lastName = user.lastName,
+                    email = user.email,
+                    password = user.password,
+                    confirmPassword = user.confirmPassword,
+                    country = user.country,
+                    address = user.address,
+                    town = user.town,
+                    phoneNumber = user.phoneNumber
+                };
+                User alreadyExists = _context.User.FirstOrDefault(user => user.email == newUser.email);
+                if (alreadyExists == null)
+                {
+                    _context.User.Add(newUser);
+                    _context.SaveChanges();
+                    return View("../SignIn/Index");
+                }
             }
-
-            var newUser = new User()
-            {
-                email = user.email,
-                password = user.password
-            };
-            _context.User.Add(newUser);
-            _context.SaveChanges();
-
-            List<User> users = new List<User>();
-            users = _context.User.ToList();
-
-            return View("UserInfo", users);
+            ViewBag.userEmailExists = 1;
+            return View("Index");
         }
     }
 }

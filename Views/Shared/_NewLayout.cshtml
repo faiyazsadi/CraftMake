@@ -1,4 +1,7 @@
-﻿<!DOCTYPE html>
+﻿@using Microsoft.AspNetCore.Http;
+@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor;
+
+<!DOCTYPE html>
 
 <html>
 <head>
@@ -72,6 +75,15 @@
                     <li class="active"><a href="product-details.html">Product</a></li>
                     <li><a asp-controller="Home" asp-action="Cart">Cart</a></li>
                     <li><a asp-controller="Home" asp-action="Checkout">Checkout</a></li>
+                    @if(HttpContextAccessor.HttpContext.Session.GetString("SignedIn") == null)
+                    {
+                        <li><a asp-controller="SignIn" asp-action="Index">Sign In</a></li>
+                        <li><a asp-controller="Register" asp-action="Index">Register</a></li>
+                    } else
+                    {
+                        <li><a asp-controller="SignIn" asp-action="Index">Welcome <br> @HttpContextAccessor.HttpContext.Session.GetString("SignedIn")!</a></li>
+                        <li><a asp-controller="Register" asp-action="Index">Logout</a></li>
+                    }
                 </ul>
             </nav>
             <!-- Button Group -->
@@ -84,6 +96,10 @@
                 <a asp-action="Cart" class="cart-nav"><img src="/img/core-img/cart.png" alt=""> Cart <span>(0)</span></a>
                 <a href="#" class="fav-nav"><img src="/img/core-img/favorites.png" alt=""> Favourite</a>
                 <a href="#" class="search-nav"><img src="/img/core-img/search.png" alt=""> Search</a>
+                @*<a href="#" class=""><i class="fa fa-sign-in" aria-hidden="true"></i></i>Login</a>
+                <a href="#" class=""><i class="fa fa-user-plus" aria-hidden="true"></i>Register</a>*@
+                
+                
             </div>
             <!-- Social Button -->
             <div class="social-info d-flex justify-content-between">
@@ -185,6 +201,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <script src="~/js/bootstrap.min.js"></script>
     <!-- Plugins js -->
     <script src="~/js/plugins.js"></script>
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
     <!-- Active js -->
     <script src="~/js/active.js"></script>
 </body>

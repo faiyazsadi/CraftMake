@@ -3,6 +3,7 @@ using CraftMake.Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CraftMake.Migrations
 {
     [DbContext(typeof(CraftMakeDatabaseContext))]
-    partial class CraftMakeDatabaseContextModelSnapshot : ModelSnapshot
+    [Migration("20220718152908_register")]
+    partial class register
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -55,8 +58,11 @@ namespace CraftMake.Migrations
 
             modelBuilder.Entity("CraftMake.Models.User", b =>
                 {
-                    b.Property<string>("email")
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
                     b.Property<string>("address")
                         .IsRequired()
@@ -67,6 +73,10 @@ namespace CraftMake.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("country")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("email")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -90,7 +100,7 @@ namespace CraftMake.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("email");
+                    b.HasKey("Id");
 
                     b.ToTable("User");
                 });
