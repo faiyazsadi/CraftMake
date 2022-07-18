@@ -21,6 +21,7 @@ namespace CraftMake.Controllers
         [HttpGet]
         public IActionResult Index()
         {
+            HttpContext.Session.SetString("key", "value");
             List<Product> products = new List<Product>();
             products = _context.Product.ToList();
 
@@ -47,6 +48,7 @@ namespace CraftMake.Controllers
 
         public IActionResult Privacy()
         {
+            ViewBag.SessionValue = HttpContext.Session.GetString("key");
             return View();
         }
 

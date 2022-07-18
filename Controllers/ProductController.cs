@@ -41,6 +41,7 @@ namespace CraftMake.Controllers
                 await _context.SaveChangesAsync();
                 return View("Index");
             }
+            
             return View("../Home/Index");
         }
     }
