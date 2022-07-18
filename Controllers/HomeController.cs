@@ -57,6 +57,18 @@ namespace CraftMake.Controllers
             return View(cart_items);
         }
 
+        public IActionResult RemoveItem(int id)
+        {
+            foreach(var item in cart_items)
+            {
+                if(item.Id == id)
+                {
+                    cart_items.Remove(item);
+                    break;
+                }
+            }
+            return RedirectToAction("Cart");
+        }
         [HttpPost]
         public IActionResult Cart(Product model)
         {
