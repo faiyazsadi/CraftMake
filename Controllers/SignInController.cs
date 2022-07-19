@@ -70,6 +70,10 @@ namespace CraftMake.Controllers
                 ApplicationGlobal.userName = "Sadi";*/
                 User _user = _context.User.FirstOrDefault(x => x.email == model.email);
                 HttpContext.Session.SetString("SignedIn", _user.firstName + " " + _user.lastName);
+                if(HttpContext.Session.GetInt32("id") != null && HttpContext.Session.GetInt32("id") != 0)
+                {
+                    return RedirectToAction("Details", "Home", new { id = HttpContext.Session.GetInt32("id") } );
+                }
                 return RedirectToAction("Index", "Home");
                 /*return View("../Home/Index", HomeController.products);*/
             }

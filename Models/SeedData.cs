@@ -22,7 +22,7 @@ namespace CraftMake.Models
                             ProductName = "Modern Chair",
                             ProductQuantity = 10,
                             IsApproved = 1,
-                            ProductPrice = 180,
+                            ProductPrice = 120,
                             userEmail = "user@gmail.com",
                             ProductDescription = "This is a custom made chair",
                             ImagePath = "/img/bg-img/1.jpg"
@@ -44,7 +44,7 @@ namespace CraftMake.Models
                             IsApproved = 1,
                             ProductPrice = 100,
                             userEmail = "user@gmail.com",
-                            ProductDescription = "Stone Plant Pot",
+                            ProductDescription = "Plant Pot",
                             ImagePath = "/img/bg-img/5.jpg"
                         },
                         new Product
@@ -52,9 +52,9 @@ namespace CraftMake.Models
                             ProductName = "Small Table",
                             ProductQuantity = 10,
                             IsApproved = 1,
-                            ProductPrice = 100,
+                            ProductPrice = 200,
                             userEmail = "user@gmail.com",
-                            ProductDescription = "Stone Plant Pot",
+                            ProductDescription = "Small Table",
                             ImagePath = "/img/bg-img/6.jpg"
                         },
                         new Product
@@ -64,7 +64,7 @@ namespace CraftMake.Models
                             IsApproved = 1,
                             ProductPrice = 100,
                             userEmail = "user@gmail.com",
-                            ProductDescription = "Stone Plant Pot",
+                            ProductDescription = "Night Stand",
                             ImagePath = "/img/bg-img/4.jpg"
                         },
                         new Product
@@ -72,9 +72,9 @@ namespace CraftMake.Models
                             ProductName = "Modern Rocking Chair",
                             ProductQuantity = 10,
                             IsApproved = 1,
-                            ProductPrice = 100,
+                            ProductPrice = 120,
                             userEmail = "user@gmail.com",
-                            ProductDescription = "Stone Plant Pot",
+                            ProductDescription = "Modern Rocking Chair",
                             ImagePath = "/img/bg-img/8.jpg"
                         },
                         new Product
@@ -84,17 +84,17 @@ namespace CraftMake.Models
                             IsApproved = 1,
                             ProductPrice = 100,
                             userEmail = "user@gmail.com",
-                            ProductDescription = "Stone Plant Pot",
+                            ProductDescription = "Modern Rocking Chair",
                             ImagePath = "/img/bg-img/3.jpg"
                         },
                         new Product
                         {
-                            ProductName = "Modern Rocking Chair",
+                            ProductName = "Home Decor",
                             ProductQuantity = 10,
                             IsApproved = 1,
                             ProductPrice = 100,
                             userEmail = "user@gmail.com",
-                            ProductDescription = "Stone Plant Pot",
+                            ProductDescription = "Home Decor",
                             ImagePath = "/img/bg-img/9.jpg"
                         }
                     );

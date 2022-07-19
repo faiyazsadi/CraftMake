@@ -29,6 +29,10 @@ namespace CraftMake.Controllers
         
         public IActionResult Details(int id)
         {
+            if(HttpContext.Session.GetString("SignedIn") == null || HttpContext.Session.GetString("SignedIn") == "")
+            {
+                HttpContext.Session.SetInt32("id", id);
+            }
             return View(_context.Product.FirstOrDefault(x => x.Id == id));
         }
 
