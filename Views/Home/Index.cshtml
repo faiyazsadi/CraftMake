@@ -11,18 +11,21 @@
 
         <!-- Single Catagory -->
         @foreach(var product in Model)
-        {
-            <div class="single-products-catagory clearfix">
-                <a asp-controller="Home" asp-action="Details" asp-route-id="@product.Id">
-                    <img src="@Url.Content(product.ImagePath)" alt="">
+        {   
+            if(product.IsApproved == 1)
+            {
+                <div class="single-products-catagory clearfix">
+                    <a asp-controller="Home" asp-action="Details" asp-route-id="@product.Id">
+                        <img src="@Url.Content(product.ImagePath)" alt="">
                     <!-- Hover Content -->
-                    <div class="hover-content">
-                        <div class="line"></div>
-                        <p>From $@product.ProductPrice</p>
-                        <h4>@product.ProductName</h4>
-                    </div>
-                </a>
-            </div>
+                        <div class="hover-content">
+                            <div class="line"></div>
+                            <p>From $@product.ProductPrice</p>
+                            <h4>@product.ProductName</h4>
+                        </div>
+                    </a>
+                </div>
+            }
         }
         @*<!-- Single Catagory -->
         <div class="single-products-catagory clearfix">

@@ -8,6 +8,8 @@ namespace CraftMake.Controllers
     {
         private readonly CraftMakeDatabaseContext _context;
         private readonly IWebHostEnvironment _webHostEnvironment;
+
+        public static List<Product> awaiting_approval = new List<Product>();
         public ProductController(CraftMakeDatabaseContext context, IWebHostEnvironment webHostEnvironment)
         {
             _context = context;
@@ -32,6 +34,8 @@ namespace CraftMake.Controllers
                 var newProduct = new Product()
                 {
                     ProductName = product.ProductName,
+                    ProductQuantity = product.ProductQuantity,
+                    IsApproved = 0,
                     ProductPrice = product.ProductPrice,
                     userEmail = product.userEmail,
                     ProductDescription = product.ProductDescription,
@@ -39,6 +43,7 @@ namespace CraftMake.Controllers
                 };
                 await _context.Product.AddAsync(newProduct);
                 await _context.SaveChangesAsync();
+                awaiting_approval.Add(newProduct);
                 return View("Index");
             }
             

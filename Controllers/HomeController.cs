@@ -22,7 +22,6 @@ namespace CraftMake.Controllers
         [HttpGet]
         public IActionResult Index()
         {
-            
             products = _context.Product.ToList();
 
             return View(products);
@@ -54,6 +53,10 @@ namespace CraftMake.Controllers
 
         public IActionResult Cart()
         {
+            if (HttpContext.Session.GetString("SignedIn") == null || HttpContext.Session.GetString("SignedIn") == "")
+            {
+                return RedirectToAction("Index", "SignIn");
+            }
             return View(cart_items);
         }
 
@@ -72,6 +75,10 @@ namespace CraftMake.Controllers
         [HttpPost]
         public IActionResult Cart(Product model)
         {
+            if (HttpContext.Session.GetString("SignedIn") == null || HttpContext.Session.GetString("SignedIn") == "")
+            {
+                return RedirectToAction("Index", "SignIn");
+            }
             int id = model.Id;
             cart_items.Add(_context.Product.FirstOrDefault(x => x.Id == id));
             return View(cart_items);

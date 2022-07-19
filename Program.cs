@@ -6,6 +6,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
 builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 // Add Session
 builder.Services.AddDistributedMemoryCache();
@@ -18,7 +19,7 @@ builder.Services.AddDbContext<CraftMakeDatabaseContext>(options =>
 // Session Idele Timeout
 builder.Services.AddSession(options =>
 {
-    options.IdleTimeout = TimeSpan.FromSeconds(10);
+    options.IdleTimeout = TimeSpan.FromMinutes(2);
     options.Cookie.HttpOnly = true;
     options.Cookie.IsEssential = true;
 });

@@ -20,56 +20,80 @@ namespace CraftMake.Models
                         new Product
                         {
                             ProductName = "Modern Chair",
+                            ProductQuantity = 10,
+                            IsApproved = 1,
                             ProductPrice = 180,
+                            userEmail = "user@gmail.com",
                             ProductDescription = "This is a custom made chair",
                             ImagePath = "/img/bg-img/1.jpg"
                         },
                         new Product
                         {
                             ProductName = "Minimalistic Plant Pot",
+                            ProductQuantity = 10,
+                            IsApproved = 1,
                             ProductPrice = 100,
+                            userEmail = "user@gmail.com",
                             ProductDescription = "Stone Plant Pot",
                             ImagePath = "/img/bg-img/2.jpg"
                         },
                         new Product
                         {
                             ProductName = "Plant Pot",
+                            ProductQuantity = 10,
+                            IsApproved = 1,
                             ProductPrice = 100,
+                            userEmail = "user@gmail.com",
                             ProductDescription = "Stone Plant Pot",
                             ImagePath = "/img/bg-img/5.jpg"
                         },
                         new Product
                         {
                             ProductName = "Small Table",
+                            ProductQuantity = 10,
+                            IsApproved = 1,
                             ProductPrice = 100,
+                            userEmail = "user@gmail.com",
                             ProductDescription = "Stone Plant Pot",
                             ImagePath = "/img/bg-img/6.jpg"
                         },
                         new Product
                         {
                             ProductName = "Night Stand",
+                            ProductQuantity = 10,
+                            IsApproved = 1,
                             ProductPrice = 100,
+                            userEmail = "user@gmail.com",
                             ProductDescription = "Stone Plant Pot",
                             ImagePath = "/img/bg-img/4.jpg"
                         },
                         new Product
                         {
                             ProductName = "Modern Rocking Chair",
+                            ProductQuantity = 10,
+                            IsApproved = 1,
                             ProductPrice = 100,
+                            userEmail = "user@gmail.com",
                             ProductDescription = "Stone Plant Pot",
                             ImagePath = "/img/bg-img/8.jpg"
                         },
                         new Product
                         {
                             ProductName = "Modern Rocking Chair",
+                            ProductQuantity = 10,
+                            IsApproved = 1,
                             ProductPrice = 100,
+                            userEmail = "user@gmail.com",
                             ProductDescription = "Stone Plant Pot",
                             ImagePath = "/img/bg-img/3.jpg"
                         },
                         new Product
                         {
                             ProductName = "Modern Rocking Chair",
+                            ProductQuantity = 10,
+                            IsApproved = 1,
                             ProductPrice = 100,
+                            userEmail = "user@gmail.com",
                             ProductDescription = "Stone Plant Pot",
                             ImagePath = "/img/bg-img/9.jpg"
                         }

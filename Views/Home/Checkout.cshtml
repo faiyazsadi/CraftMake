@@ -1,4 +1,7 @@
-﻿<div class="cart-table-area section-padding-0">
+﻿@using Microsoft.AspNetCore.Http;
+@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor;
+
+<div class="cart-table-area section-padding-0">
     <div class="container-fluid">
         <div class="row">
             <div class="col-12 col-lg-8">
@@ -68,9 +71,9 @@
                 <div class="cart-summary">
                     <h5>Cart Total</h5>
                     <ul class="summary-table">
-                        <li><span>subtotal:</span> <span>$140.00</span></li>
+                        <li><span>subtotal:</span> <span>$@HttpContextAccessor.HttpContext.Session.GetString("Price")</span></li>
                         <li><span>delivery:</span> <span>Free</span></li>
-                        <li><span>total:</span> <span>$140.00</span></li>
+                        <li><span>subtotal:</span> <span>$@HttpContextAccessor.HttpContext.Session.GetString("Price")</span></li>
                     </ul>
 
                     <div class="payment-method">

@@ -39,7 +39,9 @@ namespace CraftMake.Controllers
                 if(emailMatched && passwordMatched)
                 {
                     Admin _admin = _context.Admin.FirstOrDefault(x => x.email == model.email);
+
                     HttpContext.Session.SetString("AdminSignedIn", _admin.firstName + " " + _admin.lastName);
+
                     return RedirectToAction("Index", "Home");
                 }
             }
@@ -72,6 +74,12 @@ namespace CraftMake.Controllers
                 /*return View("../Home/Index", HomeController.products);*/
             }
             return View("Error");
+        }
+        public IActionResult Logout()
+        {
+            HttpContext.Session.SetString("SignedIn", "");
+            HttpContext.Session.SetString("AdminSignedIn", ""   );
+            return View("../Home/Index", HomeController.products);
         }
     }
 }
