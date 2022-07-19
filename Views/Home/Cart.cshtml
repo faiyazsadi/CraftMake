@@ -2,6 +2,10 @@
 @inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor;
 @model IEnumerable<CraftMake.Models.Product>;
 
+    @{
+        ViewBag.Title = "Cart";
+    }
+
 <div class="cart-table-area section-padding-0">
     <div class="container-fluid">
         <div class="row">

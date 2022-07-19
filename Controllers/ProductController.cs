@@ -17,6 +17,11 @@ namespace CraftMake.Controllers
         }
         public IActionResult Index()
         {
+            HttpContext.Session.SetInt32("sellPage", 1);
+            if (HttpContext.Session.GetString("SignedIn") == null || HttpContext.Session.GetString("SignedIn") == "")
+            {
+                return RedirectToAction("Index", "SignIn");
+            }
             return View();
         }
         [HttpPost]
@@ -44,10 +49,15 @@ namespace CraftMake.Controllers
                 await _context.Product.AddAsync(newProduct);
                 await _context.SaveChangesAsync();
                 awaiting_approval.Add(newProduct);
+                HttpContext.Session.SetInt32("itemPosted", 1);
                 return View("Index");
             }
             
             return View("../Home/Index");
+        }
+        public string Search(string query)
+        {
+            return query;
         }
     }
 }

@@ -1,5 +1,10 @@
-﻿@model CraftMake.Models.Product;
+﻿@using Microsoft.AspNetCore.Http;
+@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor;
+@model CraftMake.Models.Product;
 
+@{
+    ViewBag.Title = "Product";
+}
 
 <div class="cart-table-area section-padding-0">
     <div class="container-fluid">
@@ -30,11 +35,17 @@
                             </div>
                         </div>
                         @*<input type="submit" value="Submit"/>*@
-                        <div class="amado-btn-group mt-30 mb-100">
+                        <div class="amado-btn-group mt-30 mb-10">
                             <input type="submit" value="Add Product" class="btn amado-btn mb-15">
                         </div>
                     </form>
-                    
+                    @if(HttpContextAccessor.HttpContext.Session.GetInt32("itemPosted") == 1)
+                    {
+                        <div class="alert alert-success" role="alert">
+                            Your Product is submitted for approval!
+                        </div>
+                        HttpContextAccessor.HttpContext.Session.SetInt32("itemPosted", 0);
+                    }
                 </div>
             </div>
             @*<div class="col-12 col-lg-4">

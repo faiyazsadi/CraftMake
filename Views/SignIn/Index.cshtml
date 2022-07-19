@@ -10,6 +10,11 @@
     </form>
 </div>*@
 
+
+@{
+    ViewBag.Title = "Sign In";
+}
+
 <div class="cart-table-area section-padding-0">
     <div class="container-fluid">
         <div class="row">
@@ -26,13 +31,11 @@
                                 <input asp-for="email" type="email" class="form-control" id="email" placeholder="Email" value="">
                                 @Html.ValidationMessageFor(model => model.email, "", new { @class = "text-danger" })
                             </div>
+                            
                             <div class="col-12 mb-3">
                                 <input asp-for="password" type="password" class="form-control" id="password" placeholder="Password" value="">
                                 @Html.ValidationMessageFor(model => model.password, "", new { @class = "text-danger" })
                             </div>
-                        </div>
-                        <div class="amado-btn-group mt-20">
-                            <input type="submit" class="btn amado-btn mb-15" value="Sign In">
                         </div>
                         @if(ViewBag.userEmailExists == 0)
                         {
@@ -40,6 +43,17 @@
                                 User Doesn't Exist! <a class="card-link" asp-controller="Register" asp-action="Index"><u style="font-weight:bold; color: #1e6cfc; font-size:16px;">Register Now!</u></a>
                             </div>
                         }
+                        @if(ViewBag.passwordNotMatched == 1)
+                        {
+                            <div class="alert alert-danger" role="alert">
+                                Incorrect Password!
+                            </div>
+                        }
+                        <div class="amado-btn-group mt-20">
+                            <input type="submit" class="btn amado-btn mb-15" value="Sign In">
+                        </div>
+                        
+                        
                     </form>
                 </div>
             </div>

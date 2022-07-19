@@ -26,17 +26,17 @@ namespace CraftMake.Controllers
             // Check if Addmin
             List<Admin> admins = new List<Admin>();
             admins = _context.Admin.ToList();
-            foreach(var admin in admins)
+            foreach (var admin in admins)
             {
-                if(model.email == admin.email)
+                if (model.email == admin.email)
                 {
                     emailMatched = true;
                 }
-                if(model.email == admin.email && model.password == admin.password)
+                if (model.email == admin.email && model.password == admin.password)
                 {
                     passwordMatched = true;
                 }
-                if(emailMatched && passwordMatched)
+                if (emailMatched && passwordMatched)
                 {
                     Admin _admin = _context.Admin.FirstOrDefault(x => x.email == model.email);
 
@@ -54,12 +54,12 @@ namespace CraftMake.Controllers
                 {
                     emailMatched = true;
                 }
-                if(model.email == user.email && model.password == user.password)
+                if (model.email == user.email && model.password == user.password)
                 {
                     passwordMatched = true;
                 }
             }
-            if(!emailMatched)
+            if (!emailMatched)
             {
                 ViewBag.userEmailExists = 0;
                 return View("Index");
@@ -70,14 +70,24 @@ namespace CraftMake.Controllers
                 ApplicationGlobal.userName = "Sadi";*/
                 User _user = _context.User.FirstOrDefault(x => x.email == model.email);
                 HttpContext.Session.SetString("SignedIn", _user.firstName + " " + _user.lastName);
-                if(HttpContext.Session.GetInt32("id") != null && HttpContext.Session.GetInt32("id") != 0)
+                if (HttpContext.Session.GetInt32("id") != null && HttpContext.Session.GetInt32("id") != 0)
                 {
-                    return RedirectToAction("Details", "Home", new { id = HttpContext.Session.GetInt32("id") } );
+                    return RedirectToAction("Details", "Home", new { id = HttpContext.Session.GetInt32("id") });
+                }
+                if(HttpContext.Session.GetInt32("sellPage") == 1)
+                {
+                    HttpContext.Session.SetInt32("sellPage", 0);
+                    return RedirectToAction("Index", "Product");
                 }
                 return RedirectToAction("Index", "Home");
                 /*return View("../Home/Index", HomeController.products);*/
             }
-            return View("Error");
+            if(emailMatched && !passwordMatched)
+            {
+                ViewBag.passwordNotMatched = 1;
+                return View("Index");
+            }
+            return View("Index");
         }
         public IActionResult Logout()
         {
