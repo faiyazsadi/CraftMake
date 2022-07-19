@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "/UB+8O7pbhauHQsJXHON105g2BiMwgxttR/StZEpei0=",
+  "Hash": "vX/Xmm12UaIYhhUjs0lLZLbFeTFCdf53o/E568VcXnw=",
   "Source": "CraftMake",
   "BasePath": "_content/CraftMake",
   "Mode": "Default",
@@ -1885,6 +1885,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\product-img\\98541371-7a7e-493e-8d67-f560cd02fbf2_20220705_185245.jpg"
+    },
+    {
+      "Identity": "D:\\dotnet\\CraftMake\\wwwroot\\img\\product-img\\a3b20f69-f77d-4aea-9172-a90a97b47f16_20220705_185530.jpg",
+      "SourceId": "CraftMake",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\dotnet\\CraftMake\\wwwroot\\",
+      "BasePath": "_content/CraftMake",
+      "RelativePath": "img/product-img/a3b20f69-f77d-4aea-9172-a90a97b47f16_20220705_185530.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\product-img\\a3b20f69-f77d-4aea-9172-a90a97b47f16_20220705_185530.jpg"
     },
     {
       "Identity": "D:\\dotnet\\CraftMake\\wwwroot\\img\\product-img\\b1493164-0164-458a-9da1-a62b85505333_20220705_185556.jpg",

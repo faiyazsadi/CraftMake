@@ -71,10 +71,15 @@
                 <ul>
                     <li><a onclick="changeColor" asp-controller="Home" asp-action="Index">Home</a></li>
                     <li><a asp-controller="Product" asp-action="Index">Sell</a></li>
+                    @if(HttpContextAccessor.HttpContext.Session.GetString("AdminSignedIn") != null)
+                    {
+                        <li><a asp-controller="Admin" asp-action="Index">Posted Items</a></li>
+                    }
                     <li><a href="#">Shop</a></li>
                     <li><a href="#">Product</a></li>
                     <li><a asp-controller="Home" asp-action="Cart">Cart</a></li>
                     <li><a asp-controller="Home" asp-action="Checkout">Checkout</a></li>
+                    
                     @if(HttpContextAccessor.HttpContext.Session.GetString("SignedIn") == null)
                     {
                         <li><a asp-controller="SignIn" asp-action="Index">Sign In</a></li>
