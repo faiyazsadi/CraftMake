@@ -5,9 +5,12 @@
 @{
     ViewBag.Title = "Checkout";
 }
+
 <div class="cart-table-area section-padding-0">
     <div class="container-fluid">
+        
         <div class="row">
+            
             <div class="col-12 col-lg-8">
                 <div class="checkout_details_area mt-50 clearfix">
 
@@ -31,6 +34,8 @@
                             </div>
                             <div class="col-12 mb-3">
                                 <select class="w-100" id="country">
+                                <option value="Sel">Select Country</option>
+                                <option value="Bangladesh">Bangladesh</option>
                                 <option value="usa">United States</option>
                                 <option value="uk">United Kingdom</option>
                                 <option value="ger">Germany</option>
@@ -39,7 +44,7 @@
                                 <option value="aus">Australia</option>
                                 <option value="bra">Brazil</option>
                                 <option value="cana">Canada</option>
-                            </select>
+                                </select>
                             </div>
                             <div class="col-12 mb-3">
                                 <input type="text" class="form-control mb-3" id="street_address" placeholder="Address" value="">
@@ -68,7 +73,14 @@
                                 </div>
                             </div>
                         </div>
+                        @*@if(HttpContextAccessor.HttpContext.Session.GetInt32("OrderPlaced") == 1) {
+                        HttpContextAccessor.HttpContext.Session.SetInt32("OrderPlaced", 0);
+                        <div class="alert alert-success" role="alert">
+                        Congratulations! Your Order have been placed!
+                        </div>
+                        }*@
                     </form>
+                    
                 </div>
             </div>
             <div class="col-12 col-lg-4">
@@ -94,9 +106,15 @@
                     </div>
 
                     <div class="cart-btn mt-100">
-                        <a href="#" class="btn amado-btn w-100">Checkout</a>
+                        <a asp-controller="Product" asp-action="OrderPlaced" class="btn amado-btn w-100">Checkout</a>
                     </div>
                 </div>
+                @if(HttpContextAccessor.HttpContext.Session.GetInt32("OrderPlaced") == 1) {
+                    HttpContextAccessor.HttpContext.Session.SetInt32("OrderPlaced", 0);
+                    <div class="alert alert-success" role="alert">
+                    Congratulations! Your Order have been placed!
+                    </div>
+               }
             </div>
         </div>
     </div>

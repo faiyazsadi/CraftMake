@@ -1,11 +1,12 @@
-﻿@model IEnumerable<CraftMake.Models.Product>;
+﻿@using Microsoft.AspNetCore.Http;
+@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor;
+@model IEnumerable<CraftMake.Models.Product>;
 
 @{
     ViewBag.Title = "Home";
 }
 
-
-        <!-- Product Catagories Area Start -->
+     <!-- Product Catagories Area Start -->
 <div class="products-catagories-area clearfix">
     <div class="amado-pro-catagory clearfix">
 

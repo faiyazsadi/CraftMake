@@ -64,5 +64,10 @@ namespace CraftMake.Controllers
         {
             return query;
         }
+        public IActionResult OrderPlaced()
+        {
+            HttpContext.Session.SetInt32("OrderPlaced", 1);
+            return View("../Home/Checkout");
+        }
     }
 }

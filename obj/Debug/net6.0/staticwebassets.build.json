@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "pv3KKOtgNaeMx9doI55S0vuTnufp1BQ4Y45NX4HwMSI=",
+  "Hash": "BvnQbcIgZt3ENhN/GoDxm5MNRewsf0V17mes7N2d/cE=",
   "Source": "CraftMake",
   "BasePath": "_content/CraftMake",
   "Mode": "Default",
@@ -2157,6 +2157,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\product-img\\79c354a5-00f2-4bfe-8453-fbb6c63206ac_Vase2.jpg"
+    },
+    {
+      "Identity": "D:\\dotnet\\CraftMake\\wwwroot\\img\\product-img\\7e28433b-7784-4c11-9885-2bb1a23b9010_luciano-paris-1bfp7vRzODk-unsplash.jpg",
+      "SourceId": "CraftMake",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\dotnet\\CraftMake\\wwwroot\\",
+      "BasePath": "_content/CraftMake",
+      "RelativePath": "img/product-img/7e28433b-7784-4c11-9885-2bb1a23b9010_luciano-paris-1bfp7vRzODk-unsplash.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\product-img\\7e28433b-7784-4c11-9885-2bb1a23b9010_luciano-paris-1bfp7vRzODk-unsplash.jpg"
     },
     {
       "Identity": "D:\\dotnet\\CraftMake\\wwwroot\\img\\product-img\\855d80a9-f3a0-4f52-acc2-23342a985589_20220705_185556.jpg",
