@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "BvnQbcIgZt3ENhN/GoDxm5MNRewsf0V17mes7N2d/cE=",
+  "Hash": "ZaDlM0hqx0I4EPuE+VnswJmFGeZPsiQdxUta8IVnPEI=",
   "Source": "CraftMake",
   "BasePath": "_content/CraftMake",
   "Mode": "Default",
@@ -2142,6 +2142,23 @@
       "OriginalItemSpec": "wwwroot\\img\\product-img\\5fd8632e-f645-4865-9cad-876eeb42fd9c_20220705_185556.jpg"
     },
     {
+      "Identity": "D:\\dotnet\\CraftMake\\wwwroot\\img\\product-img\\6062bcc4-4d01-4077-9841-1b7f4d36cbf6_mockup-graphics-aUkYaG12Dgs-unsplash.jpg",
+      "SourceId": "CraftMake",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\dotnet\\CraftMake\\wwwroot\\",
+      "BasePath": "_content/CraftMake",
+      "RelativePath": "img/product-img/6062bcc4-4d01-4077-9841-1b7f4d36cbf6_mockup-graphics-aUkYaG12Dgs-unsplash.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\product-img\\6062bcc4-4d01-4077-9841-1b7f4d36cbf6_mockup-graphics-aUkYaG12Dgs-unsplash.jpg"
+    },
+    {
       "Identity": "D:\\dotnet\\CraftMake\\wwwroot\\img\\product-img\\79c354a5-00f2-4bfe-8453-fbb6c63206ac_Vase2.jpg",
       "SourceId": "CraftMake",
       "SourceType": "Discovered",
@@ -2157,6 +2174,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\product-img\\79c354a5-00f2-4bfe-8453-fbb6c63206ac_Vase2.jpg"
+    },
+    {
+      "Identity": "D:\\dotnet\\CraftMake\\wwwroot\\img\\product-img\\7d8addee-71da-46ff-9c97-7a5215e92f50_ryan-klaus-QMR1TQhUiMY-unsplash.jpg",
+      "SourceId": "CraftMake",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\dotnet\\CraftMake\\wwwroot\\",
+      "BasePath": "_content/CraftMake",
+      "RelativePath": "img/product-img/7d8addee-71da-46ff-9c97-7a5215e92f50_ryan-klaus-QMR1TQhUiMY-unsplash.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\product-img\\7d8addee-71da-46ff-9c97-7a5215e92f50_ryan-klaus-QMR1TQhUiMY-unsplash.jpg"
     },
     {
       "Identity": "D:\\dotnet\\CraftMake\\wwwroot\\img\\product-img\\7e28433b-7784-4c11-9885-2bb1a23b9010_luciano-paris-1bfp7vRzODk-unsplash.jpg",

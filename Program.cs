@@ -19,7 +19,7 @@ builder.Services.AddDbContext<CraftMakeDatabaseContext>(options =>
 // Session Idele Timeout
 builder.Services.AddSession(options =>
 {
-    options.IdleTimeout = TimeSpan.FromMinutes(2);
+    options.IdleTimeout = TimeSpan.FromSeconds(20);
     options.Cookie.HttpOnly = true;
     options.Cookie.IsEssential = true;
 });
