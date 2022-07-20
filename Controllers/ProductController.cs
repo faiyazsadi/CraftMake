@@ -8,7 +8,7 @@ namespace CraftMake.Controllers
     {
         private readonly CraftMakeDatabaseContext _context;
         private readonly IWebHostEnvironment _webHostEnvironment;
-
+        public static List<Product> new_products = new List<Product>();
         public static List<Product> awaiting_approval = new List<Product>();
         public ProductController(CraftMakeDatabaseContext context, IWebHostEnvironment webHostEnvironment)
         {
@@ -23,6 +23,11 @@ namespace CraftMake.Controllers
                 return RedirectToAction("Index", "SignIn");
             }
             return View();
+        }
+        public IActionResult NewProducts()
+        {
+            new_products = _context.Product.OrderByDescending(x => x.Id).Take(5).ToList();
+            return View(new_products);
         }
         [HttpPost]
         public async Task<IActionResult> AddProduct(Product product)

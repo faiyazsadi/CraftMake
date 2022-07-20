@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "BbucXv2J6vpp/CAHPLxEq9huCSdLJElTk9OwxpiPXIE=",
+  "Hash": "pv3KKOtgNaeMx9doI55S0vuTnufp1BQ4Y45NX4HwMSI=",
   "Source": "CraftMake",
   "BasePath": "_content/CraftMake",
   "Mode": "Default",
@@ -1938,6 +1938,23 @@
       "OriginalItemSpec": "wwwroot\\img\\product-img\\0c446c68-fb73-4acb-9e5f-dc13ea3cca1f_20220705_185556.jpg"
     },
     {
+      "Identity": "D:\\dotnet\\CraftMake\\wwwroot\\img\\product-img\\2a38bf3b-6806-43c5-8ef7-2d43c6c46fbb_mutzii-vHLa285gvcU-unsplash.jpg",
+      "SourceId": "CraftMake",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\dotnet\\CraftMake\\wwwroot\\",
+      "BasePath": "_content/CraftMake",
+      "RelativePath": "img/product-img/2a38bf3b-6806-43c5-8ef7-2d43c6c46fbb_mutzii-vHLa285gvcU-unsplash.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\product-img\\2a38bf3b-6806-43c5-8ef7-2d43c6c46fbb_mutzii-vHLa285gvcU-unsplash.jpg"
+    },
+    {
       "Identity": "D:\\dotnet\\CraftMake\\wwwroot\\img\\product-img\\30de74d2-670f-4d59-a184-b98235014511_20220705_185245.jpg",
       "SourceId": "CraftMake",
       "SourceType": "Discovered",
@@ -1955,6 +1972,23 @@
       "OriginalItemSpec": "wwwroot\\img\\product-img\\30de74d2-670f-4d59-a184-b98235014511_20220705_185245.jpg"
     },
     {
+      "Identity": "D:\\dotnet\\CraftMake\\wwwroot\\img\\product-img\\31887e66-d10a-4c8d-8b57-939217e2f863_linh-le-Ebwp2-6BG8E-unsplash.jpg",
+      "SourceId": "CraftMake",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\dotnet\\CraftMake\\wwwroot\\",
+      "BasePath": "_content/CraftMake",
+      "RelativePath": "img/product-img/31887e66-d10a-4c8d-8b57-939217e2f863_linh-le-Ebwp2-6BG8E-unsplash.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\product-img\\31887e66-d10a-4c8d-8b57-939217e2f863_linh-le-Ebwp2-6BG8E-unsplash.jpg"
+    },
+    {
       "Identity": "D:\\dotnet\\CraftMake\\wwwroot\\img\\product-img\\3b678674-6078-4cbb-970c-742a7202cea3_20220705_185245.jpg",
       "SourceId": "CraftMake",
       "SourceType": "Discovered",
@@ -1970,6 +2004,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\product-img\\3b678674-6078-4cbb-970c-742a7202cea3_20220705_185245.jpg"
+    },
+    {
+      "Identity": "D:\\dotnet\\CraftMake\\wwwroot\\img\\product-img\\484c8787-fec0-4dde-b258-6fc9b405a944_britta-preusse-p7KKwjP3s68-unsplash.jpg",
+      "SourceId": "CraftMake",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\dotnet\\CraftMake\\wwwroot\\",
+      "BasePath": "_content/CraftMake",
+      "RelativePath": "img/product-img/484c8787-fec0-4dde-b258-6fc9b405a944_britta-preusse-p7KKwjP3s68-unsplash.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\product-img\\484c8787-fec0-4dde-b258-6fc9b405a944_britta-preusse-p7KKwjP3s68-unsplash.jpg"
+    },
+    {
+      "Identity": "D:\\dotnet\\CraftMake\\wwwroot\\img\\product-img\\5134d45d-4ea8-40bb-be58-7f824a466aa6_manja-vitolic-rsFQROmlyR8-unsplash.jpg",
+      "SourceId": "CraftMake",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\dotnet\\CraftMake\\wwwroot\\",
+      "BasePath": "_content/CraftMake",
+      "RelativePath": "img/product-img/5134d45d-4ea8-40bb-be58-7f824a466aa6_manja-vitolic-rsFQROmlyR8-unsplash.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\product-img\\5134d45d-4ea8-40bb-be58-7f824a466aa6_manja-vitolic-rsFQROmlyR8-unsplash.jpg"
     },
     {
       "Identity": "D:\\dotnet\\CraftMake\\wwwroot\\img\\product-img\\52f61af4-b149-4988-8333-ed49661a2dd3_20220705_185543.jpg",
@@ -2023,6 +2091,23 @@
       "OriginalItemSpec": "wwwroot\\img\\product-img\\57cdf38a-6dc1-4b49-bef8-2d7e5e8659b2_20220705_185556.jpg"
     },
     {
+      "Identity": "D:\\dotnet\\CraftMake\\wwwroot\\img\\product-img\\5caf78a9-1899-4584-81db-2aa01a51d50e_manja-vitolic-SM60_qt-r6k-unsplash.jpg",
+      "SourceId": "CraftMake",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\dotnet\\CraftMake\\wwwroot\\",
+      "BasePath": "_content/CraftMake",
+      "RelativePath": "img/product-img/5caf78a9-1899-4584-81db-2aa01a51d50e_manja-vitolic-SM60_qt-r6k-unsplash.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\product-img\\5caf78a9-1899-4584-81db-2aa01a51d50e_manja-vitolic-SM60_qt-r6k-unsplash.jpg"
+    },
+    {
       "Identity": "D:\\dotnet\\CraftMake\\wwwroot\\img\\product-img\\5f3d4285-4080-4ed7-b112-fecf9ef78118_Vase.jpg",
       "SourceId": "CraftMake",
       "SourceType": "Discovered",
@@ -2055,6 +2140,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\product-img\\5fd8632e-f645-4865-9cad-876eeb42fd9c_20220705_185556.jpg"
+    },
+    {
+      "Identity": "D:\\dotnet\\CraftMake\\wwwroot\\img\\product-img\\79c354a5-00f2-4bfe-8453-fbb6c63206ac_Vase2.jpg",
+      "SourceId": "CraftMake",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\dotnet\\CraftMake\\wwwroot\\",
+      "BasePath": "_content/CraftMake",
+      "RelativePath": "img/product-img/79c354a5-00f2-4bfe-8453-fbb6c63206ac_Vase2.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\product-img\\79c354a5-00f2-4bfe-8453-fbb6c63206ac_Vase2.jpg"
     },
     {
       "Identity": "D:\\dotnet\\CraftMake\\wwwroot\\img\\product-img\\855d80a9-f3a0-4f52-acc2-23342a985589_20220705_185556.jpg",
@@ -2191,6 +2293,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\product-img\\b7a911f2-6746-49f1-a8b6-54f04e0269dd_linh-le-giP0e750Dr8-unsplash.jpg"
+    },
+    {
+      "Identity": "D:\\dotnet\\CraftMake\\wwwroot\\img\\product-img\\bb9c04d2-7a66-41fc-8b63-83642afc9632_britta-preusse-p7KKwjP3s68-unsplash.jpg",
+      "SourceId": "CraftMake",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\dotnet\\CraftMake\\wwwroot\\",
+      "BasePath": "_content/CraftMake",
+      "RelativePath": "img/product-img/bb9c04d2-7a66-41fc-8b63-83642afc9632_britta-preusse-p7KKwjP3s68-unsplash.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\product-img\\bb9c04d2-7a66-41fc-8b63-83642afc9632_britta-preusse-p7KKwjP3s68-unsplash.jpg"
     },
     {
       "Identity": "D:\\dotnet\\CraftMake\\wwwroot\\img\\product-img\\c439f715-183e-49e7-9b39-960b5bf92502_20220705_185543.jpg",

@@ -22,7 +22,7 @@ namespace CraftMake.Controllers
         [HttpGet]
         public IActionResult Index()
         {
-            products = _context.Product.ToList();
+            products = _context.Product.Take(8).ToList();
 
             return View(products);
         }

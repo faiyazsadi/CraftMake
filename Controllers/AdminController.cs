@@ -30,6 +30,8 @@ namespace CraftMake.Controllers
                 }
             }
             _context.SaveChanges();
+            var new_product = _context.Product.FirstOrDefault(x => x.Id == id);
+            ProductController.new_products.Add(new_product);
             ProductController.awaiting_approval.Remove(removeProduct);
             return View("Index", ProductController.awaiting_approval);
         }
